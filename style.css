@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 75%;
+  margin: 90px auto;
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.clifford-card,
+.walters-card,
+.whittle-card,
+.harmon-card,
+.abrams-card{
+  border-radius: 5px;
+  padding: 15px 30px;
+  }
+.clifford-card{
+  grid-column: 1/3;
+  grid-row: 1;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(images/bg-pattern-quotation.png);
+  background-repeat: no-repeat;
+  background-position: top right 17%;
+}
+.walters-card{
+  grid-column: 3/4;
+  grid-row: 1;
+  background-color: hsl(217, 19%, 35%);
+}
+.whittle-card{
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background-color: white;
+}
+.harmon-card{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: white;
+}
+.abrams-card{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background-color: hsl(219, 29%, 14%);
+}
+
+h5{
+  color:hsl(210, 46%, 95%);
+}
+.whittle-card h5{
+  color: hsl(217, 19%, 35%);
+}
+.whittle-card h3{
+  color: hsl(217, 19%, 35%);
+}
+.whittle-card p{
+  color: hsla(217, 19%, 35%,0.5);
+}
+
+.whittle-card .paraghraf{
+  color: hsla(217, 19%, 35%,0.7);
+}
+
+.harmon-card h5{
+  color: hsl(217, 19%, 35%);
+}
+.harmon-card h3{
+  color: hsl(217, 19%, 35%);
+}
+.harmon-card p{
+  color: hsla(217, 19%, 35%,0.5);
+}
+
+.harmon-card .paraghraf{
+  color: hsla(217, 19%, 35%,0.7);
+}
+
+h3{
+  color: white;
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+p{
+  color: hsla(210, 46%, 95%,0.5);
+  font-size: 11px;
+}
+
+.paraghraf{
+  color: hsla(210, 46%, 95%,0.7);
+  padding-top: 10px;
+}
+
+img{
+  float: left;
+  width: 25px;
+  border-radius: 50%;
+  border: .5px solid rgba(255, 255, 255,0.7);
+  margin-right: 10px;
+}
+
+.end{ 
+    font-size: 11px;
+    text-align: center; 
+}
+
+@media (max-width:800px){
+  
+  body{
+    width: 100%;
+    margin: 90px auto;
+  }
+
+  .clifford-card{
+    background-image: url(images/bg-pattern-quotation.png);
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: hsl(263, 55%, 52%);
+  }
+  .walters-card{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: hsl(217, 19%, 35%);
+  }
+  .whittle-card{
+    grid-column: 2/4;
+    grid-row: 7/9;
+    background-color: white;
+  }
+  .harmon-card{
+    grid-column: 2/4;
+    grid-row: 4/5;
+    background-color: white;
+  }
+  .abrams-card{
+    grid-column: 2/4;
+    grid-row: 5/7;
+    background-color: hsl(219, 29%, 14%);
+  }
+  
+}
